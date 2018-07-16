@@ -44,7 +44,7 @@ When `buildcss.sh` generates css files the new files
 will have the same name as the files in the *sites*
 directory.  
 
-*css/*
+*css/*  
 Each theme have it's own subdirectory in *css* .
 The subdirectories contain css files with the same
 name as the template in *sites/* that was used to 
