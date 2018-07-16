@@ -1,0 +1,47 @@
+
+i = !important
+
+a(c = accent)
+  if c is "visited"
+    c = accent2
+  color c i
+
+bgc(c = bg)
+  if c is 2
+    c = bg2
+  if c is 3
+    c = bg3
+  background-color c i
+
+bold()
+  font-weight bold i
+
+brdc(args...)
+  if args
+    c = args
+  else
+    c = color-border
+  border-color c i
+
+fgc(c = fg)
+  color c i
+
+ff(f = 3)
+  if f is 1
+    f = fontface1,monospace
+  if f is 2
+    f = fontface2,monospace
+  if f is 3
+    f = fontface3,sans-serif
+  font-family: f i
+
+fs(s = 3)
+  if s is 1
+    s = fontsize1
+  if s is 2
+    s = fontsize2
+  if s is 3
+    s = fontsize3
+  font-size: s i
+
+// syntax:ssDslash

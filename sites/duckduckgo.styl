@@ -1,0 +1,90 @@
+// url(), which matches an exact URL.
+// url-prefix(), which matches if the document URL starts with the value provided.
+// domain(), which matches if the document URL is on the domain provided (or a subdomain of it).
+// regexp(), which matches if the document URL is matched by the regular expression provided. The expression must match the entire URL.
+
+
+@-moz-document domain("duckduckgo.com")
+  @require "_generic"
+  // >> Homepage
+  .search--adv
+      bgc(2)
+
+  .search__autocomplete > .acp-wrap
+      bgc()
+
+      > .acp--highlight
+          bgc(2)
+          fg()
+
+      strong
+          fg()
+
+  // >> Top header
+  .site-wrapper > #header_wrapper
+      bgc()
+
+  .site-wrapper > #header_wrapper > #header
+      bgc()
+
+  // >> Search field
+
+  .search--header
+      bgc(2)
+
+  // >> Quick search results
+
+  // >> Main background
+  .zci
+      bgc(2)
+      color()
+
+  // >> Info/link box
+  .tile--info
+      bgc()
+
+      &__expand
+          bgc(3)
+
+  // >> Meaning boxes
+  .tile--c
+      bgc(3)
+      fg()
+
+
+  // >> Alternative (wide-screen) box
+
+  .module__text
+      color()
+
+  // >>* "Related topics"
+  .about-info-box__heading
+      fgc(light)
+
+  // >> Results
+
+  .result
+      &.highlight
+          bgc(2)
+
+      &__snippet
+          fgc()
+
+          b
+            fgc(green)
+
+  // >> Back-to-top arrow
+
+  .btn--top
+      bgc(2)
+      color()
+
+      &:hover
+          bgc(3)
+
+  // >> Result separator line
+
+  .result--sep--hr:before
+      bgc(3)
+
+  // syntax:ssDslash
